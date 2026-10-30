@@ -38,12 +38,6 @@ try {
                   
     $sql7 = "INSERT INTO modulos (nombre, abreviatura, creditos, horassemanales)
             VALUES ('Optativa ASIR', 'OPT', 5, 3);";
-                  
-    $sql8 = "INSERT INTO modulos (nombre, abreviatura, creditos, horassemanales)
-            VALUES ('Proyecto Intermodular de ASIR', 'PSIR', 4, 2);";
-                  
-    $sql9 = "INSERT INTO modulos (nombre, abreviatura, creditos, horassemanales)
-            VALUES ('Administración en Sistemas Operativos', 'ASO', 5, 5);";
 
     $pdo->exec($sql1);
     echo ('insert 1 correcto<br>');
@@ -59,10 +53,7 @@ try {
     echo ('insert 6 correcto<br>');
     $pdo->exec($sql7);
     echo ('insert 7 correcto<br>');
-    $pdo->exec($sql8);
-    echo ('insert 8 correcto<br>');
-    $pdo->exec($sql9);
-    echo ('insert 9 correcto<br>');
+
     echo "Datos insertados correctamente en la tabla 'modulos'.";
 } catch (\Throwable $error) {
     echo ('Se ha producido un error, aquí más información: ');
